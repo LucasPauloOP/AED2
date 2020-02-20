@@ -2,23 +2,19 @@
 #include<stdlib.h>
 #include<conio.h>
 
-/*****************
+/*
 ****Passo Recursivo******
 Para qualquer valor o somatório será
 potencialComRecursividade(N) = 2 * potencialComRecursividade(N-1) 
 */
 int potencialComRecursividade (int num) {
-
-	// caso base
-	if(num == 1){
-		return 2;
+	// Caso base
+	if(num == 0) {
+		return 1;
 	}
-	
 	else{
-		//
 		return 2 * potencialComRecursividade(num-1);
 	}
-
 }
 
 int main () {
@@ -31,3 +27,4 @@ int main () {
 	
 	printf("\nCom recursividade: %d",result);
 }
+

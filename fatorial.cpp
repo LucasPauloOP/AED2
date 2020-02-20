@@ -9,8 +9,9 @@ fatorialComRecursividade(N) = N * fatorialComRecursividade(N-1)
 */
 
 int fatorialComRecursividade (int num) {
+	
 	// Caso base
-	if(num == 1){
+	if(num == 1 || num == 0){
 		return 1;
 	}
 		
